@@ -15,7 +15,6 @@ public class StringBuilderExample {
 			st.append(i);
 		}
 		System.out.println(st.toString());
-		System.out.println();
 
 	}
 
