@@ -3,7 +3,7 @@ package sec07.exam01_daemon;
 public class DaemonExample {
 	public static void main(String[] args) {
 		AutoSaveThread autoSaveThread = new AutoSaveThread();
-		autoSaveThread.setDaemon(true);
+		autoSaveThread.setDaemon(true);	// 작업 스레드를 데몬스레드화
 		autoSaveThread.start();
 		
 		try {

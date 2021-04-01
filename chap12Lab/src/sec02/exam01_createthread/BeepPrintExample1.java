@@ -4,6 +4,7 @@ import java.awt.Toolkit;
 
 public class BeepPrintExample1 {
 	public static void main(String[] args) {
+		// Main Thread가 main() 메소드를 실행한다.
 		Toolkit toolkit = Toolkit.getDefaultToolkit();	
 		for(int i=0; i<5; i++) {		
 			toolkit.beep();

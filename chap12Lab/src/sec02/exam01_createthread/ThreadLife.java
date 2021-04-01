@@ -10,10 +10,11 @@ public class ThreadLife implements Runnable {
 		}
 	}
 
+	// Main Thread가 main() 메소드를 실행한다.
 	public static void main(String[] args) {
-		ThreadLife tl = new ThreadLife();
+		ThreadLife tl = new ThreadLife();		// tl은 Runnable 인터페이스의 구현객체
 
-		// 첫 번째 Thread 생성
+		// 첫 번째 Thread 생성 : 작업 스레드
 		Thread first = new Thread(tl, "first1");
 		// 두 번째 Thread 생성
 		Thread second = new Thread(tl, "second1");
