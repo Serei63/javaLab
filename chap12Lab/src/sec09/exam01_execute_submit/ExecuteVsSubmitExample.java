@@ -6,9 +6,11 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class ExecuteVsSubmitExample {
 	public static void main(String[] args) throws Exception {
+		// 1. 스레드풀 생성
 		ExecutorService executorService = Executors.newFixedThreadPool(2);
 
 		for (int i = 0; i < 10; i++) {
+			// 2. 작업 생성
 			Runnable runnable = new Runnable() {
 				@Override
 				public void run() {
@@ -22,12 +24,14 @@ public class ExecuteVsSubmitExample {
 				}
 			};
 
-			executorService.execute(runnable);
-			// executorService.submit(runnable);
+			// 3. 작업 처리 요청 (작업 큐에 적재)
+			//executorService.execute(runnable);
+			 executorService.submit(runnable);
 
 			Thread.sleep(10);
 		}
 
+		// 스레드풀 종료
 		executorService.shutdown();
 	}
 }
