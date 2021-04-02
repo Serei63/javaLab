@@ -4,10 +4,10 @@ public class BoxExample {
 
 	public static void main(String[] args) {
 		Box box = new Box();
-		box.set("홍길동");
+		box.set("홍길동");	// 형변환, Object <- String
 		String name = (String) box.get();
 		
-		box.set(new Apple());
+		box.set(new Apple());	// 형변환, Object <- Apple
 		Apple apple = (Apple) box.get();
 	}
 
