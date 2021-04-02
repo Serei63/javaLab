@@ -4,6 +4,17 @@ public class MyFunctionalInterfaceExample {
 	public static void main(String[] args) {
 		MyFunctionalInterface fi;
 		
+		/*
+		// ÀÍ¸í±¸Çö°´Ã¼
+		fi = new MyFunctionalInterface() {
+			@Override
+			public int method(int x, int y) {
+				int result = x + y;
+				return result;
+			}
+		};
+		*/
+		
 		fi = (x, y) -> {
 			int result = x + y;
 			return result;
