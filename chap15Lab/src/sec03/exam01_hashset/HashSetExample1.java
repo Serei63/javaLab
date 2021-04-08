@@ -26,6 +26,7 @@ public class HashSetExample1 {
 		
 		System.out.println("총 객체수: " + set.size());
 		
+		// iterator(반복자) 없이 향상된 for문 사용해 자료 읽어오기 가능.
 		for(String element : set) {
 			System.out.println("\t" + element);
 		}

@@ -10,6 +10,7 @@ public class PropertiesExample {
 		String path = PropertiesExample.class.getResource("database.properties").getPath();
 		path = URLDecoder.decode(path, "utf-8");
 		properties.load(new FileReader(path));
+		System.out.println("path="+path);
 		
 		String driver = properties.getProperty("driver");
 		String url = properties.getProperty("url");
