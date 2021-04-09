@@ -3,6 +3,7 @@ package sec01.stream_introduction;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 public class IteratorVsStreamExample {
@@ -21,5 +22,15 @@ public class IteratorVsStreamExample {
 		//Stream 이용
 		Stream<String> stream = list.stream();
 		stream.forEach( name -> System.out.println(name) );
+		
+		/*
+		// 익명구현객체를 매개변수로 사용한다.
+		stream.forEach(new Consumer<String>() {
+			@Override
+			public void accept(String name) {
+				System.out.println(name);
+			}
+		});
+		*/
 	}
 }

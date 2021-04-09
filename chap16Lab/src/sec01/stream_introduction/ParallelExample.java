@@ -2,6 +2,7 @@ package sec01.stream_introduction;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 public class ParallelExample {	
@@ -10,7 +11,22 @@ public class ParallelExample {
 		
 		//순차 처리
 		Stream<String> stream = list.stream();
-		stream.forEach(ParallelExample :: print);
+		
+		// 익명구현객체
+		/*
+		stream.forEach(new Consumer<String>() {
+			@Override
+			public void accept(String t) {
+				ParallelExample.print(t);
+			}
+		});
+		*/
+		
+		// 람다식
+		stream.forEach( t -> ParallelExample.print(t));
+		
+		// 정적 메소드 참조
+		//stream.forEach(ParallelExample :: print);
 		
 		System.out.println();
 		

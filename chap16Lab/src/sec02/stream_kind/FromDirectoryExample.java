@@ -8,7 +8,9 @@ import java.util.stream.Stream;
 
 public class FromDirectoryExample {
 	public static void main(String[] args) throws IOException {
-		Path path = Paths.get("C:/JavaProgramming/source");
+		Path path = Paths.get("C:/temp");
+		
+		// 디렉토리로부터 스트림 얻기
 		Stream<Path> stream = Files.list(path);
 		stream.forEach( p -> System.out.println(p.getFileName()) );
 	}
