@@ -18,7 +18,8 @@ public class ToListExample {
 		//남학생들만 묶어 List 생성
 		List<Student> maleList = totalList.stream()
 				.filter(s->s.getSex()==Student.Sex.MALE)
-				.collect(Collectors.toList());
+				.collect(Collectors.toList());	// 최종처리: 수집(남학생만으로 리스트 생성)
+		
 		maleList.stream()
 			.forEach(s -> System.out.println(s.getName()));
 		

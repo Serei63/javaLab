@@ -14,6 +14,7 @@ public class FilteringExample {
 		
 		names.stream()
 			.filter(n -> n.startsWith("신"))
+			// .filter(String :: startsWith("신")) 	// 매개변수의 메소드 참조: 매개변수의 클래스명::메소드명
 			.forEach(n -> System.out.println(n));
 		System.out.println();
 		
@@ -23,3 +24,4 @@ public class FilteringExample {
 			.forEach(n -> System.out.println(n));		
 	}
 }
+

@@ -12,7 +12,7 @@ public class SequencialVsParallelExample {
 	//순차 처리
 	public static long testSequencial(List<Integer> list) {
 		long start = System.nanoTime();
-		list.stream().forEach((a) -> work(a));
+		list.stream().forEach((a) -> work(a));	// 순차 스트림으로 생성한다
 		long end = System.nanoTime();
 	    long runTime = end - start;
 	    return runTime;
@@ -21,7 +21,7 @@ public class SequencialVsParallelExample {
 	//병렬 처리
 	public static long testParallel(List<Integer> list) {
 		long start = System.nanoTime();
-		list.stream().parallel().forEach((a)-> work(a));
+		list.stream().parallel().forEach((a)-> work(a));	// 순차스트림을 병렬스트림으로 한다
 		long end = System.nanoTime();
 	    long runTime = end - start;
 	    return runTime;
@@ -44,3 +44,4 @@ public class SequencialVsParallelExample {
 		}
 	}
 }
+

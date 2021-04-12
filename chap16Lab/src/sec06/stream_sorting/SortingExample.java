@@ -10,8 +10,8 @@ public class SortingExample {
 		//숫자 요소일 경우
 		IntStream intStream = Arrays.stream(new int[] {5, 3, 2, 1, 4});
 		intStream
-			.sorted()
-			.forEach(n -> System.out.print(n + ","));
+			.sorted()	// 중간처리, 정렬
+			.forEach(n -> System.out.print(n + ","));	// 최종처
 		System.out.println();
 		
 		//객체 요소일 경우

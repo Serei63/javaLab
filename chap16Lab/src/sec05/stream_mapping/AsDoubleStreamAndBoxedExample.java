@@ -9,14 +9,14 @@ public class AsDoubleStreamAndBoxedExample {
 		
 		IntStream intStream = Arrays.stream(intArray);
 		intStream
-			.asDoubleStream()
+			.asDoubleStream()		// 중간처리: 매핑(int -> double)
 			.forEach(d -> System.out.println(d));
 			
 		System.out.println();
 		
 		intStream = Arrays.stream(intArray);
 		intStream
-			.boxed()
+			.boxed()	// 중간처리 : 매핑(int -> Integer)
 			.forEach(obj -> System.out.println(obj.intValue()));
 	}
 }

@@ -20,3 +20,4 @@ public class MaleStudentExample {
 			.forEach(s -> System.out.println(s.getName()));
 	}
 }
+
