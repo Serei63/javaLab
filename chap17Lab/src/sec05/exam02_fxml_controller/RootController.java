@@ -10,7 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
 public class RootController implements Initializable {
-	@FXML private Button btn1;
+	@FXML private Button btn1;	// DI(Dependency Injection)
 	@FXML private Button btn2;
 	@FXML private Button btn3;
 

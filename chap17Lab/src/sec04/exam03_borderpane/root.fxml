@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml" prefHeight="200.0" prefWidth="300.0" >
+<BorderPane prefHeight="200.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
    <top>
       <ToolBar>
         <items>
-			<Button text="Button" />
-			<Button text="Button" />
+			<Button text="친구" />
+			<Button text="채팅" />
         </items>
       </ToolBar>
    </top>
    <center>
-      <TextArea/>
+      <TextArea />
    </center>
    <bottom>
       <BorderPane>
          <center>
-            <TextField/>
+            <TextField />
          </center>
          <right>
-            <Button text="Button"/>
+            <Button text="전송" />
          </right>
       </BorderPane>
    </bottom>
