@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 
 public class FileOutputStreamExample {
 	public static void main(String[] args) throws Exception {
-		String originalFileName = "D:/02.download/java/chap18/src/sec04/exam03_fileoutputstream/house.jpg";
+		String originalFileName = "C:\\dev\\workspace\\git\\javaLab\\chap18Lab\\src\\sec04\\exam03_fileoutputstream\\house.jpg";
 		String targetFileName = "C:/Temp/house.jpg";
 		
 		FileInputStream fis = new FileInputStream(originalFileName);

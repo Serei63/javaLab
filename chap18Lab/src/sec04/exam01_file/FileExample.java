@@ -20,7 +20,7 @@ public class FileExample {
 		File temp = new File("C:/Temp");
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd   a   HH:mm");
 		File[] contents = temp.listFiles();
-		System.out.println("날짜              시간         형태       크기    이름");
+		System.out.println("날짜          	    시간         	형태     크기  	  이름");
 		System.out.println("-------------------------------------------------------------------");
 		for(File file : contents) {
 			System.out.print(sdf.format(new Date(file.lastModified())));

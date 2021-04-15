@@ -12,7 +12,8 @@ public class ReadExample2 {
 		String data = "";
 		while( true ) {
 			readByteNo = is.read(readBytes);
-			if(readByteNo == -1) break;
+			if(readByteNo == -1) 
+				break;
 			data += new String(readBytes, 0, readByteNo);
 		}
 		System.out.println(data);

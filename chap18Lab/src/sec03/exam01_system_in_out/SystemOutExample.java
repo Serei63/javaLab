@@ -4,7 +4,7 @@ import java.io.OutputStream;
 
 public class SystemOutExample {
 	public static void main(String[] args) throws Exception {
-		OutputStream os = System.out;		
+		OutputStream os = System.out;		// 콘솔의 바이트기반 출력스트림
 		
 		for(byte b=48; b<58; b++) {
 			os.write(b);

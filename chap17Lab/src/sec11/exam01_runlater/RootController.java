@@ -36,7 +36,7 @@ public class RootController implements Initializable {
 					Platform.runLater(()->{
 						lblTime.setText(strTime);
 					});
-					try { Thread.sleep(100); } catch (InterruptedException e) {}
+					try { Thread.sleep(1000); } catch (InterruptedException e) {}
 				}
 			};
 		};
